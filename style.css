@@ -2,7 +2,7 @@ body{
     height: 100vh;
     color: white;
     margin: 0;
-    background-color: #111111;
+    background-color: rgb(7, 7, 7);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -10,39 +10,124 @@ body{
     user-select: none;
 }
 
-h1, h2, p{
-    margin: 3% 10% 3% 10%;
+/* todos IDS  */
+#trilha-css{
+    margin-top: 1.2%;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
+#transform-world{
+    margin-left: -10%;
+    padding: 8% 0% 8% 0%;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-image: url(./assets/images/woman-code.png);
+}
 
+#course-content{
+    margin: 8% 0 8% 0;
+}
+#course-content h2{
+    font-size: 32px;
+    letter-spacing: 10px; 
+}
+#course-content p{
+    margin: 2% 0 2% 0;
+}
+
+#professional-challenges{
+    margin: 5% 0 5% 0;
+}
+#professional-challenges h2{
+    letter-spacing: 5px; 
+    font-size: 32px;
+}
+
+/* textos: */
+span{
+    color: rgb(0, 166, 255);
+}
+
+h1, h2, p{
+    margin: 0% 25% 0% 25%;
+    
+}
+h1{
+    gap: 16px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.world-text{
+    font-size: 50px;
+    text-shadow: 2px 3px 1px rgb(0, 166, 255);
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-gradient{
+    background-image: linear-gradient(to bottom, rgb(0, 166, 255) , rgb(0, 165, 194));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* header */
 .logocss{
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    margin-top: 3%;
-    width: 230px;
+    margin: 3% 0% 2% 0%;
+    width: 248px;
     height: 220px;
+    flex-shrink: 0;
 }
 
 .banner-cont{
-    background: linear-gradient(0deg, rgba(6, 29, 59, 0.100) 0%, rgba(15, 81, 82, 0.100) 50%, rgba(5, 26, 38, 0.100) 100%);
-    background: url(./assets/images/banner.png);
+    background: url(./assets/images/banner.png), linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 126, 194, 0.228) 50%, rgba(0, 0, 0, 0.8) 100%);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 button{
+    font-size: 15px;
     color: cyan;
-    background: none;
     border: 2px solid cyan;
-    border-radius: 10px;
-    margin: 1% 0% 2% 0%;
-    padding: 1.8em;
-    width: 30%;
+    margin: 2% 0% 5% 0%;
+    padding: 1.3em;
+    width: 18%;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
-#course-content{
-    padding: 2% 0% 5% 0%;
-    background-attachment: fixed; 
-    background-size: cover;
-    background-image: url(./assets/images/woman-code.png);
+/* listas dos módulos */
+.modules-list{
+    margin: 0 35% 0 35%;
 }
+.module{
+    border: 2px solid rgb(0, 166, 255);
+    border-radius: 30px;
+    box-shadow: inset 2px 3px 20px rgba(0, 0, 0, 0.901);
+    padding: 3%;
+    margin: 4% 0 0 0;
+    background-color: #222222;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background: linear-gradient(0deg, rgba(0, 208, 255, 0.146), rgba(0, 0, 0, 0));
+}
+#footer a{
+    font-weight: 900;
+    color: rgb(0, 225, 255);
+}
+
+
